@@ -1,0 +1,58 @@
+@media (min-width: 670px) {
+	.header-list .fas {
+	display: none;
+	}
+	.main-item {
+		display: flex;
+		justify-content: space-between;
+	}
+	.isi-produk {
+		width: 30%;
+	}
+}
+@media (max-width: 1000px) {
+	.content-top {
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-bottom: 50px;
+	}
+	.side-top {
+		display: none;
+	}
+}
+
+@media (max-width: 670px) {
+	.container {
+		background-color: rgba(250, 248, 241, 0.9);
+		z-index: 4;
+	}
+	
+	.header-list {
+		float: right;
+	}
+	.header-list a {
+		margin-top: 27px;
+		height: 60px;
+		box-sizing: border-box;
+		display: block;
+	}
+	.content-top .bagian-top {
+		padding-left: 50px;
+	}
+	.header-list li{
+		display: none;
+	}
+	.side-top {
+		display: none;
+	}
+	.main-item {
+		padding-top: 20px;
+		width: 280px;
+	}
+	.bot {
+		width: 615px;
+	}
+	.bot a {
+		color:#eee;
+	}
+}
