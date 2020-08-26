@@ -195,7 +195,7 @@ html {
 }
 
 .click {
-	background-image: linear-gradient(90deg ,#8B4513, #CD853F, #D2B48C, #A0522D);
+	background-image: linear-gradient(90deg ,#8B4513, #D2B48C, #CD853F, #A0522D);
 }
 
 .bot input:hover {
