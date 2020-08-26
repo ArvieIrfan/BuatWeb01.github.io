@@ -19,10 +19,14 @@
 	.side-top {
 		display: none;
 	}
+	.isi{
+		width: 100%;
+	}
 }
 
 @media (max-width: 670px) {
 	.container {
+		position: fixed;
 		background-color: rgba(250, 248, 241, 0.9);
 		z-index: 4;
 	}
@@ -35,9 +39,6 @@
 		height: 60px;
 		box-sizing: border-box;
 		display: block;
-	}
-	.content-top .bagian-top {
-		padding-left: 50px;
 	}
 	.header-list li{
 		display: none;

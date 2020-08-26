@@ -20,7 +20,7 @@ html {
 
 .container {
 	width: 100%;
-	height: 76px;
+	height: 82px;
 	background-color: rgba(250, 248, 241, 1);
 }
 
@@ -56,35 +56,28 @@ html {
 	margin: 0 auto;
 }
 
-.bagian-top {
-	display: flex;
-}
-
 .isi {
-	max-width: 1186px;
+	width: 1149px;
 	height: 650px;
-	margin: 0 auto;
-	transform: translateY(225px);
 	color: white;
+	float: left;
+	transform: translateY(205px);
+	text-align: center;
 }
 
 .isi h1 {
-	margin: 0 auto;
-	text-align: center;
 	font-size: 100px;
 	font-weight: normal;
 }
 
 .isi p {
-	margin: auto;
-	text-align: center;
 	font-size: 36px;
 }
 
 .side-top{
-	float: right;
+	float: left;
 	height: 650px;
-	max-width: 200px;
+	width: 200px;
 	padding-top: 300px;
 	background-color: rgba(250, 248, 241, 1);
 	box-sizing: border-box;
@@ -158,7 +151,7 @@ html {
 }
 
 .bot-wrapper .bot .title {
-	font: 48px/1.4em Arial,Helvetica,sans-serif;;
+	font: 48px/1.4em Arial,Helvetica,sans-serif;
 	width: 577px;
 	height: 106px;
 	letter-spacing: 3px;
@@ -168,12 +161,10 @@ html {
 	position: relative;
 	margin: 81px 0px 20px 0;
 	left: 24px;
-	justify-self: start;
-	align-self: start;
 }
 
 .bot-wrapper .bot p {
-	width: 420px;
+	width: 450px;
 	height: 72px;
 	pointer-events: auto;
 	word-wrap: break-word;
@@ -183,38 +174,44 @@ html {
 
 #txt {
 	position: relative;
-	margin: 0px 0px 53px 0;
+	margin: 0px 0px 35px 0;
 	left: 103px;
 	justify-self: start;
 	align-self: start;
 }
 
-.bot a {
-	height: 64px;
-	min-height: 22px;
-	width: 240px;
-	pointer-events: auto;
-	padding-left: 85px;
-	box-sizing: border-box;
+.bot input {
+	border: none;
+	padding: 18px 25px;
+	font-family: "montserrat", sans-serif;
+	text-transform: uppercase;
+	border-radius: 6px;
 	color: #eee;
-}
-
-#click {
-	position: relative;
-	left: 193px;
-	margin: 0px 0px 10px 0;
-	justify-self: start;
-	align-self: start;
-
+	background-size: 400%;
+	font-weight: bold;
+	box-sizing: border-box;
+	font-size: 20px;
+	animation: animate 5s linear infinite;
 }
 
 .click {
-	background-color: rgba(124, 108, 80, 1);
-	border: solid rgba(98, 97, 94, 1) 0px;
-	cursor: pointer !important;
-	text-align: initial;
-	display: flex;
-	align-items: center;
+	background-image: linear-gradient(90deg ,#8B4513, #CD853F, #D2B48C, #A0522D);
+}
+
+.bot input:hover {
+	animation: paused;
+	opacity: 0.9;
+	color: #fff;
+	cursor: pointer;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0%;
+	}
+	100%{
+		background-position: 400%;
+	}
 }
 
 .contact {
